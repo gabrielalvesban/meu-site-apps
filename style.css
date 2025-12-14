@@ -1,32 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps Recomendados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-header {
-  background: #1e90ff;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+  <header class="topo">
+    <h1>📱 Apps Recomendados</h1>
+    <p>Baixe apps confiáveis pelos nossos links</p>
+  </header>
 
-.app {
-  background: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-}
+  <main class="container">
 
-.btn {
-  display: inline-block;
-  background: #28a745;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-}
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="App 1">
+      <h2>App Cashback</h2>
+      <p>Ganhe dinheiro de volta em compras.</p>
+      <a href="#" class="btn">Baixar agora</a>
+    </div>
 
-.btn:hover {
-  background: #218838;
-}
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="App 2">
+      <h2>App Banco Digital</h2>
+      <p>Conta grátis e cartão sem anuidade.</p>
+      <a href="#" class="btn">Baixar agora</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="App 3">
+      <h2>App Jogos</h2>
+      <p>Divirta-se e ganhe recompensas.</p>
+      <a href="#" class="btn">Baixar agora</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>⚠️ Este site utiliza links de afiliado.</p>
+  </footer>
+
+</body>
+</html>
