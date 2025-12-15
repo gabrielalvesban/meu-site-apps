@@ -1,0 +1,40 @@
+/* ===== GERAL ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f2f4f8; }
+
+/* ===== HEADER ===== */
+.topo { background: linear-gradient(135deg, #1e90ff, #005eff); color: white; text-align: center; padding: 30px 15px; }
+
+/* ===== DARK MODE ===== */
+.dark-btn { margin-top: 15px; padding: 8px 14px; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; }
+body.dark { background: #121212; color: #eee; }
+body.dark header, body.dark .topo { background: linear-gradient(135deg, #000, #222); }
+body.dark .card, body.dark .link-btn { background: #1e1e1e; color: #eee; }
+body.dark footer, body.dark .link-footer { color: #aaa; }
+
+/* ===== CARDS ===== */
+.container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+.card { background: white; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); animation: subir 0.6s ease forwards; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card img { width: 90px; height: 90px; object-fit: cover; margin-bottom: 10px; }
+.card h2 { margin: 10px 0 5px; }
+.card p { color: #555; font-size: 14px; }
+.card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+
+@keyframes subir { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== BOTÕES ===== */
+.btn { display: inline-block; margin-top: 15px; background: #28a745; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s ease, transform 0.2s ease; }
+.btn:hover { transform: scale(1.05); background: #218838; }
+
+/* ===== LINKTREE ===== */
+.linktree { max-width: 400px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+.avatar { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 15px; }
+.linktree h1 { margin: 10px 0 5px; }
+.linktree p { color: #555; margin-bottom: 25px; }
+.link-btn { display: block; background: white; color: #000; text-decoration: none; padding: 15px; margin-bottom: 15px; border-radius: 12px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.2s ease, background 0.2s ease; }
+.link-btn:hover { transform: scale(1.05); background: #1e90ff; color: white; }
+.link-footer { margin-top: 30px; font-size: 13px; color: #777; }
+
+/* ===== BOTÃO WHATSAPP ===== */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background: #25d366; color: white; font-size: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 999; transition: transform 0.3s ease; }
+.whatsapp-float:hover { transform: scale(1.1); }
